@@ -4,7 +4,7 @@ const handler = async (req, res) => {
   if (req.method === "POST") {
     const data = req.body;
     const client = await MongoClient.connect(
-      "mongodb://localhost:27017/meetup_db",
+      "mongodb+srv://admin:rapidventure@cluster0.jlegy.mongodb.net/?retryWrites=true&w=majority",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,

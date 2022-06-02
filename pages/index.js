@@ -29,7 +29,7 @@ const HomePage = (props) => {
 
 export async function getStaticProps() {
   const client = await MongoClient.connect(
-    "mongodb://localhost:27017/meetup_db",
+    "mongodb+srv://admin:rapidventure@cluster0.jlegy.mongodb.net/?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
